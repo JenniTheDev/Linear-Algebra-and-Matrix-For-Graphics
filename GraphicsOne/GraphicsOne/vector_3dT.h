@@ -54,6 +54,7 @@ public:
         // implement code here     NOTE: FRIEND TEMPLATES ** MUST BE INLINED or use <> NOTATION
             //                               as in operator<< <>() case below
             //                               TAKE MY ADVICE -- GO WITH INLINING with friend templates
+
     }
     //---------------------------------------------------------------------
     friend vector3d<T> operator+(T k, const vector3d<T>& v) {
