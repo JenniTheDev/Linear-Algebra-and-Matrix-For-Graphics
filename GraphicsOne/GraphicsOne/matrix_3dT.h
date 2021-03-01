@@ -10,6 +10,17 @@
 #include <cmath>
 #include "vector_3dT.h"
 
+// getting rid of a to_string error
+namespace patch
+{
+    template < typename T > std::string to_string(const T& n)
+    {
+        std::ostringstream stm;
+        stm << n;
+        return stm.str();
+    }
+}
+
 template <typename T> class matrix3d;
 template <typename T> std::ostream& operator<<(std::ostream& os, const matrix3d<T>& m);
 typedef matrix3d<double> matrix3dD;
